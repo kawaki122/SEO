@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/style.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>SiliconUnion</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">SEO Cares</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <ul class=" inline my-2 my-lg-0">
+                <li class="list-inline-item"><button type="button" class="btn btn-outline-primary">Contact Us</button>
+                </li>
+                <li class="list-inline-item"><button type="button" class="btn btn-primary">Get Started</button></li>
+            </ul>
+        </div>
+    </nav>
+    {{{body}}}
+    <div class="message-container">
+        <div class="messages-section">
+            <div class="messages" id="msg"></div>
+            <input type="text" class="form-control" id="msg-input" placeholder="Send Message...">
+        </div>
+        <button class="fab" onclick="fabClick()"><i class="material-icons">chat_bubble</i></button>
+    </div>
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i
+                                    class="fa fa-angle-double-right"></i>Imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i
+                                    class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+
+                    <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">SEO
+                            Cares</a></p>
+                </div>
+                </hr>
+            </div>
+        </div>
+    </section>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script>
+        var isMessageOpen = false;
+        $(".messages-section").hide();
+        var messages = [];
+        function fabClick() {
+            if (isMessageOpen) {
+                $(".messages-section").hide();
+                isMessageOpen = false;
+
+            } else {
+                $(".messages-section").show();
+                isMessageOpen = true;
+            }
+        }
+        messages.push({ admin: true, message: "Hi how may i help you." });
+        for (var i = 0; i < messages.length; i++) {
+            if (messages[i].admin) {
+                $("#msg").append('<div class="message">' + messages[i].message + '</div>');
+            } else {
+                $("#msg").append('<div class="message float-right">' + messages[i].message + '</div>');
+            }
+        }
+        $("#msg-input").on('keyup', function (e) {
+            if (e.keyCode === 13) {
+                var value = $("#msg-input").val();
+                $("#msg").append('<div class="message float-right">' + value + '</div>');
+            }
+        });
+    </script>
+</body>
+
+</html>

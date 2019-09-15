@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-md-6 card mt-5 mx-auto">
+        <div class="card-header">
+            <legend>Content</legend>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="/edit">
+                <input type="hidden" name="_id" value="{{home._id}}">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">First Heading</label>
+                        <input type="text" class="form-control" name="firstHeading" value="{{home.firstHeading}}"
+                            placeholder="First Heading">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">First Sub Heading</label>
+                        <input type="text" class="form-control" name="firstSubHead" value="{{home.firstSubHead}}"
+                            placeholder="First Sub Heading">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">First Paragraph</label>
+                        <textarea class="form-control" name="firstContent" rows="3">{{home.firstContent}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Second Heading</label>
+                        <input type="text" class="form-control" name="secondHeading" value="{{home.secondHeading}}"
+                            placeholder="Second Heading">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Second Paragraph</label>
+                        <textarea class="form-control" name="secondContent" rows="3">{{home.secondContent}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Third Heading</label>
+                        <input type="text" class="form-control" name="thirdHeading" value="{{home.thirdHeading}}"
+                            placeholder="third Heading">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Third Paragraph</label>
+                        <textarea class="form-control" name="thirdContent" rows="3">{{home.thirdContent}}</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
